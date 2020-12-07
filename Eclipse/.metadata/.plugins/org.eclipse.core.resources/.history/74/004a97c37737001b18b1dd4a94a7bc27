@@ -1,0 +1,143 @@
+/******************************************************************************
+ *
+ * 		Module: ATMega16 Integrated Timers
+ *
+ *	 File Name: timers.c
+ *
+ * Description: Source file for integrated timer modules
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 24, 2020
+ *
+ *******************************************************************************/
+//TODO: COMMENTS IN THIS WHOLE THING
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "timers.h"
+
+/*******************************************************************************
+ *                      Global Variables                              	   	   *
+ *******************************************************************************/
+
+uint16 g_initialValue;		/* Initial timer value set from configuration */
+uint16 g_topValue;			/* Top timer value for Interrupt generation */
+uint8 g_timePassed;			/* Variable to save time passed */
+
+/*******************************************************************************
+ *                    	Private Function Prototypes                            *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [ISR Name]		: TIMER1_COMPA_vect
+ * [Description]	: ISR for time calculation using Timer 1
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+ISR(TIMER1_COMPA_vect){
+	g_timePassed++;		/* Increment number of seconds passed */
+}
+
+/*******************************************************************************
+ * [Function Name]	: FOC1X
+ * [Description]	: returns value of Force Output Compare depending on mode chosen
+ * [Args]
+ * 		[IN] enum TIMER_WaveformGenerationMode mode
+ * 					: Waveform generation mode to choose FOC value
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+static inline uint8 FOC1X(TIMER_WaveformGenerationMode mode){
+	/* Control FOC1X bit value according to chosen waveform generation mode */
+	switch(mode){
+	case 0:			/* NORMAL_COUNTING */
+	case 4:			/* CLEAR_TIMER_COMPARE_OCR1A */
+	case 12:		/* CLEAR_TIMER_COMPARE_ICR1 */
+		return 1;
+	default:		/* Any PWM mode */
+		return 0;
+	}
+}
+
+/*******************************************************************************
+ * [Function Name]	: TIMER1_init
+ * [Description]	: Initialize integrated timer 1
+ * [Args]
+ * 		[IN] const TIMERS_ConfigType * a_s_configuration_Ptr
+ * 					: Pointer to structure containing timer configuration
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TIMER1_init(const TIMERS_ConfigType * a_s_configuration_Ptr){
+
+	/*
+	 * COM1A1:0:	Compare Output Mode for Channel A		-> Compare output mode A control from configuration provided
+	 * COM1B1:0:	Compare Output Mode for Channel B		-> Compare output mode B control from configuration provided
+	 * FOC1A:		Force Output Compare for Channel A		-> Force output compare A calculated from configuration provided
+	 * FOC1B:		Force Output Compare for Channel B		-> Force output compare B calculated from configuration provided
+	 * WGM11:0:		Waveform Generation Mode				-> Waveform generation mode control from configuration provided
+	 */
+	TCCR1A = (a_s_configuration_Ptr->compareMatchA << COM1A0) |
+			 (a_s_configuration_Ptr->compareMatchB << COM1B0) |
+			(FOC1X(a_s_configuration_Ptr->waveForm) << FOC1A) |
+			(FOC1X(a_s_configuration_Ptr->waveForm) << FOC1B) |
+			(a_s_configuration_Ptr->waveForm & 0x03);
+
+	/*
+	 * ICNC1:	Input Capture Noise Canceler	-> Set to activate the Input Capture Noise Canceler
+	 * ICES1:	Input Capture Edge Select		-> Select edge used to trigger a capture event on ICP1 pin
+	 * BIT5:	Reserved Bit					-> (Read Only)
+	 * WGM13:2:	Waveform Generation Mode		-> Waveform generation mode control from configuration provided
+	 * CS12:0:	Clock Select					-> Prescaler control from configuration provided
+	 */
+	TCCR1B = (((a_s_configuration_Ptr->waveForm & 0x0C) >> 2) << WGM12) |
+			(a_s_configuration_Ptr->prescaler);
+
+	/* Save timer initial value in global variable */
+	g_initialValue = a_s_configuration_Ptr->initialValue;
+
+	/* Save timer top value in global variable */
+	g_topValue = a_s_configuration_Ptr->topValue;
+}
+
+/*******************************************************************************
+ * [Function Name]	: TIMER1_start
+ * [Description]	: Start timer 1 functionality
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TIMER1_start(){
+
+	/* Reset time to 0 to start a new clock */
+	g_timePassed = 0;
+
+	/* Set top value in ICR1 register */
+	ICR1 = g_topValue;
+
+	/* Set Start value in TCNT1 register */
+	TCNT1 = g_initialValue;
+
+	/* Clear INT flag for safety */
+	SET_BIT(TIFR, OCF1A);
+
+	/* Enable timer 1 output compare interrupt to restart calculating time */
+	SET_BIT(TIMSK, OCIE1A);
+}
+
+/*******************************************************************************
+ * [Function Name]	: TIMER1_stop
+ * [Description]	: Stop timer 1 functionality
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TIMER1_stop(){
+	/* Disable timer 1 output compare interrupt to stop timer from incrementing */
+	CLEAR_BIT(TIMSK, OCIE1A);
+}
+

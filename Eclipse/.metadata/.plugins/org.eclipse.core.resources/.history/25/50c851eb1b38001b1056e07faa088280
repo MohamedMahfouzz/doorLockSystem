@@ -1,0 +1,170 @@
+/******************************************************************************
+ *
+ * 		Module: Main MCU1 program
+ *
+ *	 File Name: MCU1.c
+ *
+ * Description: Source file for the MicroController start point
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 25, 2020
+ *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "MCU1.h"
+
+/*******************************************************************************
+ *                      Global Variables                              	   	   *
+ *******************************************************************************/
+
+uint8 g_password[PASSWORD_LENGTH];		/* Variable to hold input password */
+
+/*******************************************************************************
+ *                    	Function Prototypes                            		   *
+ *******************************************************************************/
+
+void MCU_init(void);					/* Function to initiate MCU */
+void resetPasswordContainer(void);		/* Function to reset password container */
+void getPassword(void);					/* Function to get password from user */
+void getAndSendPassword(void);			/* Function to get password and send it to control MCU */
+void raiseError(void);					/* Function to Start error actions */
+void unlockSystem(void);				/* Function to unlock system */
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+int main(void){
+
+	g_password[PASSWORD_LENGTH-1] = '\0';		/* Set last character in password string to NULL terminator */
+	uint8 setup = TRUE;							/* Variable for checking of setup state on MCU*/
+	uint8 changePass = FALSE;					/* Variable for checking of changing password state on MCU*/
+	uint8 openDoor = FALSE;						/* Variable for checking of opening door state on MCU*/
+	uint8 actionSymbol = 0;						/* Variable to hold action to be taken next */
+	MCU_init();									/* Initiate MCU */
+	LCD_displayStringOnNewScreen("Welcome to your door lock system");		/* Display welcome message */
+	_delay_ms(2000);							/* Delay to message display */
+	while(1){
+		while(setup){														/* Enter setup state */
+			LCD_displayStringOnNewScreen("Please set up your pass: ");		/* Display password setup message */
+			getAndSendPassword();											/* Get and send password to control MCU */
+			LCD_displayStringOnNewScreen("Please confirm pass: ");			/* Display password confirmation message */
+			getAndSendPassword();											/* Get and send password to control MCU */
+			if (ACTION_SUCCESS == USART_receiveByte()){						/* If password set action succeeded */
+				setup = FALSE;												/* Disable setup state */
+				LCD_displayStringOnNewScreen("New password set");			/* Display password set message */
+				_delay_ms(2000);											/* Delay to message display */
+				break;														/* Exit active state */
+			}
+			else{															/* If passwords did not match */
+				LCD_displayStringOnNewScreen("Passwords do not match");		/* Display passwords don't match error message */
+				_delay_ms(2000);											/* Delay to message display */
+			}
+		}
+
+		while(changePass || openDoor){										/* Enter change pass and open door states */
+			LCD_displayStringOnNewScreen(openDoor ? "Please enter pass: " : "Please enter old pass: ");		/* Display password request message */
+			getAndSendPassword();											/* Get and send password to control MCU */
+			uint8 result = USART_receiveByte();								/* Receive action result */
+			if (ACTION_SUCCESS == result){									/* If action success code received */
+				if (openDoor){												/* If active state is open door state */
+					openDoor = FALSE;										/* Disable open door state */
+					unlockSystem();											/* Unlock system */
+				}
+				else{														/* If active state is change pass state */
+					changePass = FALSE;										/* Disable change pass state */
+					setup = TRUE;											/* Disable setup state */
+				}
+				break;														/* Exit active state */
+			}
+			else if (ACTION_ERROR == result){								/* If error code received */
+				changePass = FALSE;											/* Disable change pass state */
+				openDoor = FALSE;											/* Disable open door state */
+				raiseError();												/* Start error actions */
+				break;														/* Exit active state */
+			}
+			else{															/* If action fail code received */
+				LCD_displayStringOnNewScreen("wrong password, Please try again");		/* Display wrong password message */
+				_delay_ms(2000);											/* Delay to message display */
+			}
+		}
+
+		if (setup)															/* If setup action enabled */
+			continue;														/* Skip rest and go to setupS action*/
+
+		LCD_displayStringOnNewScreen("X Change pass");						/*Display available actions message part 1 */
+		LCD_displayStringRowColumn(1, 0, "- Open door");					/*Display available actions message part 2 */
+
+		do{																	/* Keep looking until
+			actionSymbol = KEYPAD_getPressed();
+		}while('*' != actionSymbol && '-' != actionSymbol);
+
+		USART_sendByte(actionSymbol);
+		if ('*' == actionSymbol){
+			changePass = TRUE;
+		}
+		else if ('-' == actionSymbol){
+			openDoor = TRUE;
+		}
+		actionSymbol = 0;
+	}
+}
+
+void MCU_init(void){
+
+	Usart_ConfigType usart_configuration = {BAUD_RATE_9600, EIGHT_BITS, DISABLED, ONE_BIT};
+	TIMERS_ConfigType timer_configuration = {0, 31250, CLEAR_TIMER_COMPARE_ICR1, FCPU_256, NORMAL_OPERATION, NORMAL_OPERATION};
+	cli();
+	LCD_init();
+	USART_init(&usart_configuration);
+	TIMER1_init(&timer_configuration);
+	sei();
+}
+
+void resetPasswordContainer(void){
+	for (int i = 0; i < PASSWORD_LENGTH-1; i++)
+		g_password[i] = '*';
+}
+
+void getPassword(void){
+	uint8 passwordIterator = 0;
+	while(passwordIterator != PASSWORD_LENGTH-1){
+		g_password[passwordIterator] = KEYPAD_getPressed() + '0';
+		if (g_password[passwordIterator] >= '0' && g_password[passwordIterator] <= '9'){
+			passwordIterator++;
+			LCD_displayCharacter('*');
+			_delay_ms(500);
+		}
+	}
+	while ('=' != KEYPAD_getPressed());
+}
+
+void getAndSendPassword(void){
+	getPassword();
+	USART_sendString(g_password);
+	resetPasswordContainer();
+}
+
+void raiseError(void){
+	TIMER1_start();
+	LCD_displayStringOnNewScreen("      ERROR     ");
+	LCD_displayStringRowColumn(1, 0, "  SYSTEM LOCKED ");
+	while(g_timePassed <= 60);
+	TIMER1_stop();
+}
+
+void unlockSystem(void){
+	TIMER1_start();
+	LCD_displayStringOnNewScreen("Opening door");
+	while(g_timePassed <= 15);
+	LCD_displayStringOnNewScreen("Door is open");
+	while(g_timePassed <= 18);
+	LCD_displayStringOnNewScreen("Closing door");
+	while(g_timePassed <= 33);
+	TIMER1_stop();
+}

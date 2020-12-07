@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;doorLock_Control_MCU/MCU2.c&apos; to &apos;MCU.c&apos;" description="Rename resource &apos;MCU2.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MCU2.c" name="MCU.c" stamp="1607300176347" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;doorLock_Control_MCU/MCU2.h&apos; to &apos;MCU.h&apos;" description="Rename resource &apos;MCU2.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MCU2.h" name="MCU.h" stamp="1607300181713" updateReferences="true"/>
+</session>

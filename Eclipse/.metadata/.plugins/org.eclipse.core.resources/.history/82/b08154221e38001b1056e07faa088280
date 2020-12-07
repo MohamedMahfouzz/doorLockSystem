@@ -1,0 +1,163 @@
+ /******************************************************************************
+ *
+ * 		Module: LCD
+ *
+ *	 File Name: lcd.h
+ *
+ * Description: Header file for LCD driver
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 21, 2020
+ *
+ *******************************************************************************/
+
+#ifndef LCD_H_
+#define LCD_H_
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "std_types.h"
+#include "common_macros.h"
+#include "micro_config.h"
+
+/*******************************************************************************
+ *                      Preprocessor Macros                                    *
+ *******************************************************************************/
+/* LCD Data bits mode configuration */
+#define DATA_BITS_MODE 8								/* Work with LCD in 8 bits mode */
+
+/* LCD screen size configuration */
+#define NUMBER_OF_LCD_ROWS 2							/* Configure number of rows in LCD 		*/
+#define NUMBER_OF_LCD_COLS 16							/* Configure number of columns in LCD	*/
+
+/* LCD HW Pins */
+#define RS PD2											/* Register select pin 				*/
+#define RW PD3											/* Read/Write pin					*/
+#define E  PD4											/* Enable pin 						*/
+#define LCD_CTRL_PORT 		PORTD						/* PORTD output pins configuration 	*/
+#define LCD_CTRL_PORT_DIR 	DDRD						/* PORTD direction configuration	*/
+#define LCD_DATA_PORT 		PORTC						/* PORTC output pins configuration 	*/
+#define LCD_DATA_PORT_DIR 	DDRC						/* PORTC direction configuration	*/
+
+/* LCD Commands */
+#define LCD_COMMAND_EIGHT_BIT_TWO_LINE_LCD		0x38	/* 8 Bit data with 2 lines display 		*/
+#define LCD_COMMAND_FOUR_BIT_TWO_LINE_LCD		0x28	/* 8 Bit data with 2 lines display 		*/
+#define LCD_COMMAND_DISPLAY_OFF_CURSOR_OFF		0x08	/* Disable display and cursor			*/
+#define LCD_COMMAND_DISPLAY_ON_CURSOR_ON		0x0E	/* Enable display and cursor			*/
+#define LCD_COMMAND_DISPLAY_ON_CURSOR_OFF 		0x0C	/* Enable display and disable cursor	*/
+#define LCD_COMMAND_DISPLAY_OFF_CURSOR_BLINKING	0x0F	/* Disable display and blink cursor		*/
+#define LCD_COMMAND_SHIFT_DISPLAY_LEFT			0x18	/* Shift display left once 				*/
+#define LCD_COMMAND_SHIFT_DISPLAY_RIGHT			0x1C	/* Shift display right once				*/
+#define LCD_COMMAND_MOVE_CURSOR_LEFT_ONCE		0x10	/* Move cursor left once 				*/
+#define LCD_COMMAND_MOVE_CURSOR_RIGHT_ONCE		0x14	/* Move cursor right once 				*/
+#define LCD_COMMAND_CLEAR_DISPLAY				0x01	/* Clear display						*/
+#define LCD_COMMAND_SET_CURSOR_POSITION			0X80	/* Set Cursor position					*/
+
+/*******************************************************************************
+ *                      Function Declarations                                  *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [Function Name]	: LCD_init
+ * [Description]	: Initialize LCD
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_init(void);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_sendCommand
+ * [Description]	: Send command to LCD
+ * [Args]
+ * 		[IN] unsigned char a_command
+ * 					: Command to send to LCD
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_sendCommand(uint8 a_command);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayCharacter
+ * [Description]	: Display a single character on the screen
+ * [Args]
+ * 		[IN] unsigned char a_data
+ * 					: Character to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayCharacter(uint8 a_data);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayString
+ * [Description]	: Display a string on the screen
+ * [Args]
+ * 		[IN] const char *a_string
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayString(const uint8 *a_string);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_goToRowColumn
+ * [Description]	: Go to location provided
+ * [Args]
+ * 		[IN] unsigned char a_row
+ * 					: Row to put cursor on on LCD
+ * 		[IN] unsigned char a_col
+ * 					: Column to put cursor on on LCD
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_goToRowColumn(uint8 a_row, uint8 a_col);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayStringRowColumn
+ * [Description]	: Display String on the screen at provided location
+ * [Args]
+ * 		[IN] unsigned char a_row
+ * 					: Row to put cursor on on LCD
+ * 		[IN] unsigned char a_col
+ * 					: Column to put cursor on on LCD
+ * 		[IN] const unsigned char *a_string_Ptr
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayStringRowColumn(uint8 a_row, uint8 a_col, const uint8 *a_string_Ptr);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_clearScreen
+ * [Description]	: Clear screen
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_clearScreen(void);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayStringOnNewScreen
+ * [Description]	: Display a string on the screen after clearing it
+ * [Args]
+ * 		[IN] const unsigned char *a_string_Ptr
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayStringOnNewScreen(const uint8 *a_string_Ptr);
+
+/*******************************************************************************
+ * [Function Name]	: LCD_integerToString
+ * [Description]	: Display integers on LCD
+ * [Args]
+ * 		[IN] signed long a_data
+ * 					: Integer to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_integerToString(sint32 a_data);
+
+
+#endif /* LCD_H_ */

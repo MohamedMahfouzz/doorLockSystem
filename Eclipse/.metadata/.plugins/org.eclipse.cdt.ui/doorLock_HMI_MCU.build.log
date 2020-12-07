@@ -1,0 +1,56 @@
+02:20:26 **** Incremental Build of configuration Debug for project doorLock_HMI_MCU ****
+make all 
+Building file: ../MCU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MCU.d" -MT"MCU.o" -c -o "MCU.o" "../MCU.c"
+In file included from ../micro_config.h:23,
+                 from ../lcd.h:24,
+                 from ../MCU.h:22,
+                 from ../MCU.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCU.c: In function 'main':
+../MCU.c:50: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:54: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:56: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:60: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:65: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:71: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:92: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:100: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:101: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'raiseError':
+../MCU.c:208: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:209: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'unlockSystem':
+../MCU.c:222: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:224: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:226: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+Finished building: ../MCU.c
+ 
+Building target: doorLock_HMI_MCU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,doorLock_HMI_MCU.map -mmcu=atmega16 -o "doorLock_HMI_MCU.elf"  ./MCU.o ./keypad.o ./lcd.o ./timers.o ./usart.o   
+Finished building target: doorLock_HMI_MCU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S doorLock_HMI_MCU.elf  >"doorLock_HMI_MCU.lss"
+Finished building: doorLock_HMI_MCU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_HMI_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9594 bytes (58.6% Full)
+(.text + .data + .bootloader)
+
+Data:        319 bytes (31.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:20:27 Build Finished. 0 errors, 15 warnings. (took 667ms)
+

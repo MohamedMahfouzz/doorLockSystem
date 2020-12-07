@@ -1,0 +1,20 @@
+02:20:26 **** Incremental Build of configuration Debug for project doorLock_Control_MCU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_Control_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6028 bytes (36.8% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:20:26 Build Finished. 0 errors, 0 warnings. (took 233ms)
+

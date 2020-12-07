@@ -1,0 +1,85 @@
+ /******************************************************************************
+ *
+ * 		Module: External Peripherals
+ *
+ *	 File Name: external_peripherals.c
+ *
+ * Description: Source file for external peripherals
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 24, 2020
+ *
+ *******************************************************************************/
+	//TODO: I can do better
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "external_peripherals.h"
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_init
+ * [Description]	: Initiate all external peripherals and their registers
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_init(void){
+	MOTOR_PORT_DIR = MOTOR_PORT_DIR | (1 << PC3) | (1 << PC4);
+
+	BUZZER_PORT_DIR |= (1 << PC6);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_openDoor
+ * [Description]	: Unlocks door
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_openDoor(void){
+	MOTOR_PORT_OUT = (MOTOR_PORT_OUT & 0xE7) | (MOTOR_START_CW << PC3);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_holdDoor
+ * [Description]	: Holds door unlocked
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_holdDoor(void){
+	MOTOR_PORT_OUT = (MOTOR_PORT_OUT & 0xE7) | (MOTOR_STOP << PC3);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_closeDoor
+ * [Description]	: Locks door
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_closeDoor(void){
+	MOTOR_PORT_OUT = (MOTOR_PORT_OUT & 0xE7) | (MOTOR_START_CCW << PC3);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_startAlarm
+ * [Description]	: Starts Alarm from buzzer
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_startAlarm(void){
+	BUZZER_PORT_OUT = (BUZZER_PORT_OUT & 0xBF) | (BUZZER_ON << PC6);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EXTERNALPERIPHERALS_stopAlarm
+ * [Description]	: Stops Alarm from buzzer
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EXTERNALPERIPHERALS_stopAlarm(void){
+	BUZZER_PORT_OUT = (BUZZER_PORT_OUT & 0xBF) | (BUZZER_OFF << PC6);
+}

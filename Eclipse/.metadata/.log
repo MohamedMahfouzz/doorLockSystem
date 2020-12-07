@@ -1,0 +1,2807 @@
+!SESSION 2020-12-05 02:19:16.478 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-05 02:19:54.237
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-05 02:20:48.860
+!MESSAGE Indexed 'doorLock_MCU1' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-05 02:21:59.770
+!MESSAGE Indexed 'doorLock_MCU2' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2020-12-06 02:39:16.975 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-06 02:39:49.943
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-06 04:15:44.766 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-06 04:16:08.307
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.637
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.719
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.726
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.734
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.741
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.748
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.755
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.763
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:55:30.772
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 05:58:42.923
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.458
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.467
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.475
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.483
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.515
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.531
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:00:24.667
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:08:07.929
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:08:07.937
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:08:07.945
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 06:08:07.953
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-12-06 06:31:03.346 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-12-06 06:31:34.386
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-06 06:32:10.924
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2020-12-06 21:43:28.928 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-06 21:44:32.416
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.450
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.459
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.468
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.475
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.483
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.490
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.498
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.505
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.513
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.560
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 22:39:59.567
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.157
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.165
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.172
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.181
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.188
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.204
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.236
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.changelog.core.editors.GNUHyperlinkDetector.detectHyperlinks(GNUHyperlinkDetector.java:120)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.252
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.260
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.268
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.277
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.284
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.292
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:02:54.300
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.284
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.292
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.300
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.308
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.316
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.324
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:03.332
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:04.964
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:04.972
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:04.980
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:04.989
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:04.996
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.004
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.012
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.028
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.036
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.380
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.404
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.412
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.428
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:03:05.444
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:08.804
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.916
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.924
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.932
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.940
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.948
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.957
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.964
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.972
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.988
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:09.996
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.004
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.012
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.020
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.028
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.036
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.044
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.052
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.060
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.068
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.084
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.092
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:04:10.108
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.459
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.468
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.474
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.483
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.491
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.499
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.507
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.539
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.548
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.563
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.571
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.579
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.587
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:23.595
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:47.979
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.003
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.011
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.019
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.027
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.035
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:10:48.043
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:11.931
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:11.939
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:11.947
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:11.955
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:12.011
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:12.019
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:12.027
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:28.011
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:28.027
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:31.027
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:11:31.067
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:24:04.056
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:24:04.064
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:24:04.072
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.743
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.751
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.807
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.815
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.823
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.831
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.839
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:27:43.847
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:07.509
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:07.517
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:07.526
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:07.550
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:08.486
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:08.494
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:09.254
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:09.273
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:09.280
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:09.286
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:09.294
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:36:10.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:43:19.725
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:43:19.734
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:43:19.743
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.211
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.219
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.227
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.235
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.243
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.251
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.259
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.267
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.275
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-06 23:48:47.283
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:00:31.776
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:00:31.984
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:00:31.992
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.810
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.819
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.830
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.838
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.844
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:20:02.854
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:23:34.500
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:23:34.510
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:23:34.520
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:23:34.527
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:23:34.534
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:24:07.140
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:24:07.147
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:24:07.155
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:24:07.164
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.427
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.445
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.468
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.476
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.491
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.508
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:25:30.523
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.243
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.260
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.270
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.277
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.284
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.291
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.299
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.307
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.316
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:17.327
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.163
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.171
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.179
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.187
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.206
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.213
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.220
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.235
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.244
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.252
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.261
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 00:26:19.269
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:15:55.210
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:16:04.425
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:26:50.166
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:26:50.174
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:26:50.182
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:29:59.710
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:29:59.717
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:29:59.726
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:29:59.734
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:32:25.149
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:32:25.157
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:32:25.165
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:32:25.173
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:32:25.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:37:39.068
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:37:39.077
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:07.915
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.819
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.868
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.876
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.892
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.916
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.924
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.932
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.940
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.948
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:52.964
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:53.045
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:53.052
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:53.092
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.397
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.404
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.413
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.420
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.429
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:39:55.436
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:40:14.484
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:40:14.491
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:40:14.500
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:40:14.508
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.051
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.067
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.075
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.083
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.091
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.099
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.107
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.115
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.123
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.131
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.138
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:44:51.147
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:24.096
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:24.104
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:24.112
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:24.120
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:24.128
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:56.200
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:56.208
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 01:56:56.216
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.471
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.487
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.498
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.506
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.512
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.519
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.526
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.533
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.542
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.549
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.557
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:08:59.565
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.829
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.837
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.845
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.853
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.861
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.869
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.877
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.893
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:21.910
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:30.749
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:09:30.758
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:13:07.093
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:13:25.117
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-07 02:15:53.636
+!MESSAGE Indexed 'doorLock_HMI_MCU' (5 sources, 21 headers) in 0.128 sec: 292 declarations; 1,156 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-07 02:16:06.254
+!MESSAGE Indexed 'doorLock_Control_MCU' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 4 0 2020-12-07 02:18:40.772
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+!SESSION 2020-12-07 02:19:36.585 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=14.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-07 02:19:59.360
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

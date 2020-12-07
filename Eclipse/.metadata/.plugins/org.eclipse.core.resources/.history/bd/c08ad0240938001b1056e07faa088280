@@ -1,0 +1,147 @@
+/******************************************************************************
+ *
+ * 		Module: External EEPROM
+ *
+ *	 File Name: external_eeprom.c
+ *
+ * Description: Source file for External EEPROM memory
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 24, 2020
+ *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "external_eeprom.h"
+#include "i2c.h"
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [Function Name]	: EEPROM_init
+ * [Description]	: Initialize the external EEPROM memory
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void EEPROM_init(void){
+	/*
+	 * Division Factor= 2	-> Sets division factor used in SCL frequency calculation
+	 * Slave Address= 1		-> Set personal slave address for contact as slave device
+	 * Pre-scalar= ONE		-> Set pre-scalar used in SCL frequency Calculation
+	 *
+	 * SCL Frequency = CPU Clock Frequency / (16 + 2 * divisionFactor * 4^bitRatePrescalar)
+	 * 				 = 250KHz
+	 */
+	TWI_ConfigType configuration = {2, 1, ONE};
+
+	/* Initialize TWI configuration */
+	TWI_init(&configuration);
+}
+
+/*******************************************************************************
+ * [Function Name]	: EEPROM_writeByte
+ * [Description]	: Write a byte to memory at specified address
+ * [Args]
+ * 		[IN] unsigned short a_address
+ * 					: memory address to access
+ * 		[IN] unsigned char a_data
+ * 					: data to right in memory address specified
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+uint8 EEPROM_writeByte(uint16 a_address, uint8 a_data){
+
+	/* Delay between stop and start conditions */
+	_delay_ms(10);
+
+	/* Initiate TWI connection by sending start condition */
+	TWI_start();
+
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_START)
+		return ERROR;
+
+	/* Send slave address and 3 MSBs of memory address with write bit set */
+	TWI_write((uint8)(0xA0 | ((a_address & 0x0700) >> 7)));
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_SLA_W_ACK)
+		return ERROR;
+
+	/* Send 8 LSBs of memory address */
+	TWI_write((uint8)a_address);
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_DATA_ACK)
+		return ERROR;
+
+	/* Write data to accessed memory address */
+	TWI_write(a_data);
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_DATA_ACK)
+		return ERROR;
+
+	/* Terminate TWI connection by sending stop condition */
+	TWI_stop();
+	/* Return Success condition */
+	return SUCCESS;
+}
+
+/*******************************************************************************
+ * [Function Name]	: EEPROM_readByte
+ * [Description]	: Read a byte from memory at specified address
+ * [Args]
+ * 		[IN] unsigned short a_address
+ * 					: memory address to access
+ * 		[IN] unsigned char *a_data
+ * 					: variable to read data into
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+uint8 EEPROM_readByte(uint16 a_address, uint8 *a_data){
+
+	/* Initiate TWI connection by sending start condition */
+	TWI_start();
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_START)
+		return ERROR;
+
+	/* Send slave address and 3 MSBs of memory address with write bit set */
+	TWI_write((uint8)(0xA0 | ((a_address & 0x0700) >> 7)));
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_SLA_W_ACK)
+		return ERROR;
+
+	/* Send 8 LSBs of memory address */
+	TWI_write((uint8)a_address);
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_DATA_ACK)
+		return ERROR;
+
+	/* Send repeated start condition to hold master and change action */
+	TWI_start();
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_REP_START)
+		return ERROR;
+
+	/* Send slave address and 3 MSBs of memory address with read bit set */
+	TWI_write((uint8)(0xA1 | ((a_address & 0x0700) >> 7)));
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MT_SLA_R_ACK)
+		return ERROR;
+
+	/* Read data from accessed memory address */
+	*a_data = TWI_readWithNACK();
+	/* Check status of status register to assert correct status */
+	if (TWI_getStatus() != TWI_MR_DATA_NACK)
+		return ERROR;
+
+	/* Terminate TWI connection by sending stop condition */
+	TWI_stop();
+	/* Return Success condition */
+	return SUCCESS;
+}

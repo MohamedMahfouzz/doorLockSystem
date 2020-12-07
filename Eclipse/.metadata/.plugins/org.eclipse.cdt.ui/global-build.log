@@ -1,0 +1,246 @@
+02:17:41 **** Clean-only build of configuration Debug for project doorLock_Control_MCU ****
+make clean 
+rm -rf  ./MCU.o ./external_eeprom.o ./external_peripherals.o ./i2c.o ./timers.o ./usart.o  sizedummy  doorLock_Control_MCU.lss  ./MCU.d ./external_eeprom.d ./external_peripherals.d ./i2c.d ./timers.d ./usart.d  doorLock_Control_MCU.elf
+ 
+02:17:46 **** Build of configuration Debug for project doorLock_Control_MCU ****
+make all 
+Building file: ../MCU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MCU.d" -MT"MCU.o" -c -o "MCU.o" "../MCU.c"
+In file included from ../micro_config.h:23,
+                 from ../usart.h:24,
+                 from ../MCU.h:22,
+                 from ../MCU.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCU.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+In file included from ../micro_config.h:23,
+                 from ../external_eeprom.h:24,
+                 from ../external_eeprom.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../external_eeprom.c: In function 'EEPROM_writeString':
+../external_eeprom.c:161: warning: implicit declaration of function 'strlen'
+../external_eeprom.c:161: warning: incompatible implicit declaration of built-in function 'strlen'
+../external_eeprom.c:161: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+Finished building: ../external_eeprom.c
+ 
+Building file: ../external_peripherals.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"external_peripherals.d" -MT"external_peripherals.o" -c -o "external_peripherals.o" "../external_peripherals.c"
+In file included from ../micro_config.h:23,
+                 from ../external_peripherals.h:24,
+                 from ../external_peripherals.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../external_peripherals.c
+ 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+In file included from ../micro_config.h:23,
+                 from ../i2c.h:24,
+                 from ../i2c.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../i2c.c
+ 
+Building file: ../timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"timers.d" -MT"timers.o" -c -o "timers.o" "../timers.c"
+In file included from ../micro_config.h:23,
+                 from ../timers.h:24,
+                 from ../timers.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../timers.c
+ 
+Building file: ../usart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"usart.d" -MT"usart.o" -c -o "usart.o" "../usart.c"
+In file included from ../micro_config.h:23,
+                 from ../usart.h:24,
+                 from ../usart.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../usart.c
+ 
+Building target: doorLock_Control_MCU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,doorLock_Control_MCU.map -mmcu=atmega16 -o "doorLock_Control_MCU.elf"  ./MCU.o ./external_eeprom.o ./external_peripherals.o ./i2c.o ./timers.o ./usart.o   
+Finished building target: doorLock_Control_MCU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S doorLock_Control_MCU.elf  >"doorLock_Control_MCU.lss"
+Finished building: doorLock_Control_MCU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_Control_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6028 bytes (36.8% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:17:47 **** Incremental Build of configuration Debug for project doorLock_HMI_MCU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_HMI_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9594 bytes (58.6% Full)
+(.text + .data + .bootloader)
+
+Data:        319 bytes (31.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:18:52 **** Incremental Build of configuration Debug for project doorLock_Control_MCU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_Control_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6028 bytes (36.8% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:18:52 **** Incremental Build of configuration Debug for project doorLock_HMI_MCU ****
+make all 
+Building file: ../MCU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MCU.d" -MT"MCU.o" -c -o "MCU.o" "../MCU.c"
+In file included from ../micro_config.h:23,
+                 from ../lcd.h:24,
+                 from ../MCU.h:22,
+                 from ../MCU.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCU.c: In function 'main':
+../MCU.c:50: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:54: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:56: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:60: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:65: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:71: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:92: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:100: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:101: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'raiseError':
+../MCU.c:208: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:209: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'unlockSystem':
+../MCU.c:222: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:224: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:226: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+Finished building: ../MCU.c
+ 
+Building target: doorLock_HMI_MCU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,doorLock_HMI_MCU.map -mmcu=atmega16 -o "doorLock_HMI_MCU.elf"  ./MCU.o ./keypad.o ./lcd.o ./timers.o ./usart.o   
+Finished building target: doorLock_HMI_MCU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S doorLock_HMI_MCU.elf  >"doorLock_HMI_MCU.lss"
+Finished building: doorLock_HMI_MCU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_HMI_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9594 bytes (58.6% Full)
+(.text + .data + .bootloader)
+
+Data:        319 bytes (31.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:20:26 **** Incremental Build of configuration Debug for project doorLock_Control_MCU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_Control_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6028 bytes (36.8% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+02:20:26 **** Incremental Build of configuration Debug for project doorLock_HMI_MCU ****
+make all 
+Building file: ../MCU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MCU.d" -MT"MCU.o" -c -o "MCU.o" "../MCU.c"
+In file included from ../micro_config.h:23,
+                 from ../lcd.h:24,
+                 from ../MCU.h:22,
+                 from ../MCU.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCU.c: In function 'main':
+../MCU.c:50: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:54: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:56: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:60: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:65: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:71: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:92: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:100: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:101: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'raiseError':
+../MCU.c:208: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:209: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../MCU.c: In function 'unlockSystem':
+../MCU.c:222: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:224: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+../MCU.c:226: warning: pointer targets in passing argument 1 of 'LCD_displayStringOnNewScreen' differ in signedness
+Finished building: ../MCU.c
+ 
+Building target: doorLock_HMI_MCU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,doorLock_HMI_MCU.map -mmcu=atmega16 -o "doorLock_HMI_MCU.elf"  ./MCU.o ./keypad.o ./lcd.o ./timers.o ./usart.o   
+Finished building target: doorLock_HMI_MCU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S doorLock_HMI_MCU.elf  >"doorLock_HMI_MCU.lss"
+Finished building: doorLock_HMI_MCU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_HMI_MCU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9594 bytes (58.6% Full)
+(.text + .data + .bootloader)
+
+Data:        319 bytes (31.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

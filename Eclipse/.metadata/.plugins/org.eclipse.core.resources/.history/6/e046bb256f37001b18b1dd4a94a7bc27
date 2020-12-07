@@ -1,0 +1,269 @@
+/******************************************************************************
+ *
+ * 		Module: LCD
+ *
+ *	 File Name: lcd.c
+ *
+ * Description: Source file for LCD driver
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 21, 2020
+ *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "lcd.h"
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [Function Name]	: LCD_sendCommand
+ * [Description]	: Send command to LCD
+ * [Args]
+ * 		[IN] unsigned char a_command
+ * 					: Command to send to LCD
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_sendCommand(uint8 a_command){
+
+	CLEAR_BIT(LCD_CTRL_PORT, RS); 	/* Select command register */
+	CLEAR_BIT(LCD_CTRL_PORT, RW);	/* Select Write mode */
+	_delay_ms(1);					/* 50ns Address set-up time */
+	SET_BIT(LCD_CTRL_PORT, E);		/* Enable LCD */
+	_delay_ms(1);					/* 190ns delay before data set-up (Tpw - Tdws) */
+
+#if DATA_BITS_MODE == 8				/* For 8 bits mode on LCD */
+	LCD_DATA_PORT = a_command;		/* Put required command on Data port */
+#elif DATA_BITS_MODE == 4			/* For 4 bits mode on LCD */
+	/* Send the 4 MSBs from the command first */
+#ifdef UPPER_PORT_PINS				/* if data pins are from Pin 4-7 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (a_command & 0xF0);			/* Set-up command bits 4-7 to send */
+#else								/* if data pins are from Pin 0-3 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0xF0) | ((a_command & 0xF0) >> 4);		/* Set-up command bits 4-7 to send */
+#endif
+
+	_delay_ms(1);					/* 100ns delay for data set-up */
+	CLEAR_BIT(LCD_CTRL_PORT, E);	/* Disable LCD */
+	_delay_ms(1);					/* 13ns delay for data hold time */
+	SET_BIT(LCD_CTRL_PORT, E);		/* Enable LCD */
+	_delay_ms(1);					/* 190ns delay before data set-up (Tpw - Tdws) */
+
+	/* Send the 4 LSBs from the command last */
+#ifdef UPPER_PORT_PINS				/* if data pins are from Pin 4-7 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | ((a_command & 0x0F) << 4);		/* Set-up command bits 0-3 to send */
+#else								/* if data pins are from Pin 0-3 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0xF0) | (a_command & 0x0F);			/* Set-up command bits 0-3 to send */
+#endif
+
+#endif
+
+	_delay_ms(1);					/* 100ns delay for data set-up */
+	CLEAR_BIT(LCD_CTRL_PORT, E);	/* Disable LCD */
+	_delay_ms(1);					/* 13ns delay for data hold time */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_init
+ * [Description]	: Initialize LCD
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_init(void){
+
+	LCD_CTRL_PORT_DIR = (1 << RS) | (1 << RW) | (1 << E);	/* Set Register select, Read/Write, and enable pins as o/p pins */
+
+#if DATA_BITS_MODE == 8										/* For 8 bits mode on LCD */
+	LCD_DATA_PORT_DIR = 0xFF;								/* Set Data pins as o/p pins */
+	LCD_sendCommand(COMMAND_EIGHT_BIT_TWO_LINE_LCD);		/* Set-up LCD as 8 bit data 2 line LCD */
+#elif DATA_BITS_MODE == 4									/* For 4 bits mode on LCD */
+#ifdef UPPER_PORT_PINS										/* if data pins are from Pin 4-7 */
+	LCD_DATA_PORT_DIR |= 0xF0;								/* Set-up data port pins 4-7 as o/p pins */
+#else														/* if data pins are from Pin 0-3 */
+	LCD_DATA_PORT_DIR |= 0x0F;								/* Set-up data port pins 0-3 as o/p pins */
+#endif
+	LCD_sendCommand(COMMAND_FOUR_BIT_TWO_LINE_LCD);			/* Set-up LCD as 4 bit data 2 line LCD */
+#endif
+
+	LCD_sendCommand(COMMAND_DISPLAY_ON_CURSOR_OFF);			/* Activate display and deactivate cursor */
+	LCD_sendCommand(COMMAND_CLEAR_DISPLAY);					/* Clear LCD to start working */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayCharacter
+ * [Description]	: Display a single character on the screen
+ * [Args]
+ * 		[IN] unsigned char a_data
+ * 					: Character to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayCharacter(uint8 a_data){
+
+	SET_BIT(LCD_CTRL_PORT, RS); 	/* Select data register */
+	CLEAR_BIT(LCD_CTRL_PORT, RW);	/* Select Write mode */
+	_delay_ms(1);					/* 50ns Address set-up time */
+	SET_BIT(LCD_CTRL_PORT, E);		/* Enable LCD */
+	_delay_ms(1);					/* 190ns delay before data set-up (Tpw - Tdws) */
+
+#if DATA_BITS_MODE == 8				/* For 8 bits mode on LCD */
+	LCD_DATA_PORT = a_data;		/* Put required command on Data port */
+#elif DATA_BITS_MODE == 4			/* For 4 bits mode on LCD */
+	/* Send the 4 MSBs from the command first */
+#ifdef UPPER_PORT_PINS				/* if data pins are from Pin 4-7 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (a_data & 0xF0);			/* Set-up command bits 4-7 to send */
+#else								/* if data pins are from Pin 0-3 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0xF0) | ((a_data & 0xF0) >> 4);		/* Set-up command bits 4-7 to send */
+#endif
+
+	_delay_ms(1);					/* 100ns delay for data set-up */
+	CLEAR_BIT(LCD_CTRL_PORT, E);	/* Disable LCD */
+	_delay_ms(1);					/* 13ns delay for data hold time */
+	SET_BIT(LCD_CTRL_PORT, E);		/* Enable LCD */
+	_delay_ms(1);					/* 190ns delay before data set-up (Tpw - Tdws) */
+
+	/* Send the 4 LSBs from the command last */
+#ifdef UPPER_PORT_PINS				/* if data pins are from Pin 4-7 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | ((a_data & 0x0F) << 4);		/* Set-up command bits 0-3 to send */
+#else								/* if data pins are from Pin 0-3 */
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0xF0) | (a_data & 0x0F);			/* Set-up command bits 0-3 to send */
+#endif
+
+#endif
+
+	_delay_ms(1);					/* 100ns delay for data set-up */
+	CLEAR_BIT(LCD_CTRL_PORT, E);	/* Disable LCD */
+	_delay_ms(1);					/* 13ns delay for data hold time */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayString
+ * [Description]	: Display a string on the screen
+ * [Args]
+ * 		[IN] const char *a_string
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+//TODO: I want to handle 3 things: not starting from row 0, not starting from column 0, separating word on multiple lines
+void LCD_displayString(const uint8 *a_string){
+	uint8 firstSpace = 2;
+	if(strlen(a_string) > NUMBER_OF_LCD_COLS){
+		firstSpace = 14;
+//		if(a_string[NUMBER_OF_LCD_COLS] != ' '){
+//			if (a_string[NUMBER_OF_LCD_COLS+1] != ' '){
+				for (int i = NUMBER_OF_LCD_COLS; i >= 0; i--){
+					if(isspace(a_string[i]))
+						continue;
+//						firstSpace = i;
+				}
+//			}
+//			else
+//				firstSpace = NUMBER_OF_LCD_COLS+1;
+//		}
+	}
+	uint8 charNum = 0;									/* Iterator to pass through String literals */
+	while (a_string[charNum] != '\0'){					/* Pass by string character by character until null character */
+		LCD_displayCharacter(a_string[charNum++]);		/* call LCD_displayCharacter function for every character in string */
+		if (charNum == firstSpace)
+//		if (charNum%NUMBER_OF_LCD_COLS == 0)			/* Condition to display characters on a new line once line has ended */
+			LCD_goToRowColumn(1, 0);	/* Put cursor on needed location to continue display */
+	}
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_goToRowColumn
+ * [Description]	: Go to location provided
+ * [Args]
+ * 		[IN] unsigned char a_row
+ * 					: Row to put cursor on on LCD
+ * 		[IN] unsigned char a_col
+ * 					: Column to put cursor on on LCD
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_goToRowColumn(uint8 a_row, uint8 a_col){
+	uint8 positionAddress;					/* Variable to store address of position to start display */
+	switch(a_row){							/* Start calculating address using row position */
+	case 0:
+		positionAddress = a_col;			/* Add to row position column position to get final address */
+		break;
+	case 1:
+		positionAddress = a_col + 0x40;		/* Add to row position column position to get final address */
+		break;
+#if NUMBER_OF_LCD_ROWS == 4
+	case 2:
+		positionAddress = a_col + 0x10;		/* Add to row position column position to get final address */
+		break;
+	case 3:
+		positionAddress = a_col + 0x50;		/* Add to row position column position to get final address */
+		break;
+#endif
+	default:
+		positionAddress = a_col;			/* Display on first row if provided row is invalid */
+	}
+	LCD_sendCommand(COMMAND_SET_CURSOR_POSITION | positionAddress);		/* Send the required position to LCD */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayStringRowColumn
+ * [Description]	: Display String on the screen at provided location
+ * [Args]
+ * 		[IN] unsigned char a_row
+ * 					: Row to put cursor on on LCD
+ * 		[IN] unsigned char a_col
+ * 					: Column to put cursor on on LCD
+ * 		[IN] const char *a_string
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayStringRowColumn(uint8 a_row, uint8 a_col, const uint8 *a_string){
+	LCD_goToRowColumn(a_row, a_col);	/* Call LCD_goToRowColumn set string display start position */
+	LCD_displayString(a_string);		/* Call LCD_displayString to start displaying string */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_clearScreen
+ * [Description]	: Clear screen
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_clearScreen(void){
+	LCD_sendCommand(COMMAND_CLEAR_DISPLAY);		/* Send command to clear LCD */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_displayStringOnNewScreen
+ * [Description]	: Display a string on the screen after clearing it
+ * [Args]
+ * 		[IN] const char *a_string
+ * 					: String to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_displayStringOnNewScreen(const uint8 *a_string){
+	LCD_clearScreen();				/* Clear LCD Screen */
+	LCD_displayString(a_string);	/* Display string on LCD */
+}
+
+/*******************************************************************************
+ * [Function Name]	: LCD_integerToString
+ * [Description]	: Display integers on LCD
+ * [Args]
+ * 		[IN] signed long a_data
+ * 					: Integer to display on the screen
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void LCD_integerToString(sint32 a_data){
+	char buff[16]; 					/* String to hold conversion result  */
+	itoa(a_data,buff,10); 			/* integer to ASCII to convert a_data to ASCII with base 10 */
+	LCD_displayString(buff);		/* Call LCD_displayString to start displaying integer */
+}

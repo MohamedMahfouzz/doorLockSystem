@@ -1,0 +1,42 @@
+02:13:32 **** Incremental Build of configuration Debug for project doorLock_MCU2 ****
+make all 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+In file included from ../micro_config.h:23,
+                 from ../external_eeprom.h:24,
+                 from ../external_eeprom.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../external_eeprom.c: In function 'EEPROM_writeString':
+../external_eeprom.c:161: warning: implicit declaration of function 'strlen'
+../external_eeprom.c:161: warning: incompatible implicit declaration of built-in function 'strlen'
+../external_eeprom.c:161: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+Finished building: ../external_eeprom.c
+ 
+Building target: doorLock_MCU2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,doorLock_MCU2.map -mmcu=atmega16 -o "doorLock_MCU2.elf"  ./MCU2.o ./external_eeprom.o ./external_peripherals.o ./i2c.o ./timers.o ./usart.o   
+Finished building target: doorLock_MCU2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S doorLock_MCU2.elf  >"doorLock_MCU2.lss"
+Finished building: doorLock_MCU2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 doorLock_MCU2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6028 bytes (36.8% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:13:33 Build Finished. 0 errors, 4 warnings. (took 576ms)
+

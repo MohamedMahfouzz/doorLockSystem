@@ -1,0 +1,207 @@
+/******************************************************************************
+ *
+ * 		Module: I2C
+ *
+ *	 File Name: i2c.c
+ *
+ * Description: Source file for I2C driver
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 23, 2020
+ *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "i2c.h"
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+/*******************************************************************************
+ * [Function Name]	: TWI_init
+ * [Description]	: Initialize TWI peripheral
+ * [Args]
+ * 		[IN] const TWI_ConfigType * a_s_configuration_Ptr
+ * 					: Pointer to structure containing TWI configuration
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TWI_init(const TWI_ConfigType * a_s_configuration_Ptr){
+
+	/*
+	 * TWBR7:0: TWI Bit Rate Register	-> Selects the division factor for the bit rate generator from configuration provided
+	 */
+	TWBR = a_s_configuration_Ptr->divisionFactor;
+
+	/*
+	 * TWS7:3:	TWI Status			-> (Read Only)
+	 * BIT2: 	Reserved Bit		-> (Read Only)
+	 * TWPS1:0: TWI Prescaler Bits	-> Used to control the bit rate prescaler from configuration provided
+	 */
+	TWSR = a_s_configuration_Ptr->prescalar;
+
+	/*
+	 * TWA6:0: 	TWI (Slave) Address Register				-> Slave address of this TWI unit from configuration provided
+	 * TWGCE= 0	TWI General Call Recognition Enable Bit		-> Enables the recognition of a General call address (0x00)
+	 */
+	TWAR = a_s_configuration_Ptr->slaveAddress << TWA0;
+
+	/*
+	 * TWINT= 0	TWI Interrupt Flag				-> No need to clear interrupt flag
+	 * TWEA= 0 	TWI Enable Acknowledge Bit		-> No ACK pulse needs to be sent
+	 * TWSTA= 0	TWI START Condition Bit			-> No start condition needed until we start connection
+	 * TWSTO= 0	TWI STOP Condition Bit			-> No stop condition needed until we terminate connection
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWEN);
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_start
+ * [Description]	: Start new communication with another device
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TWI_start(void){
+
+	/*
+	 * TWINT= 1	TWI Interrupt Flag				-> Clear interrupt to start operation of TWI
+	 * TWEA= 0 	TWI Enable Acknowledge Bit		-> No ACK pulse needs to be sent
+	 * TWSTA= 1	TWI START Condition Bit			-> Generate start condition on bus to start connection as master
+	 * TWSTO= 0	TWI STOP Condition Bit			-> No stop condition needed until we terminate connection
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWINT) | (1 << TWSTA) | (1 << TWEN);
+
+	/* Poll waiting until TWINT is set indicating a finished job */
+	while(BIT_IS_CLEAR(TWCR,TWINT));
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_stop
+ * [Description]	: Stop communication with another device
+ * [Args]			: N/A
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TWI_stop(void){
+
+	/*
+	 * TWINT= 1	TWI Interrupt Flag				-> Clear interrupt to start operation of TWI
+	 * TWEA= 0 	TWI Enable Acknowledge Bit		-> No ACK pulse needs to be sent
+	 * TWSTA= 0	TWI START Condition Bit			-> No start condition needed until we start connection
+	 * TWSTO= 1	TWI STOP Condition Bit			-> Generate stop condition on bus to terminate connection as master
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_write
+ * [Description]	: Write data to TWDR to communicate to other device
+ * [Args]
+ * 		[IN] unsigned char a_data
+ * 					: Data to send to other device
+ *
+ * [Returns]		: N/A
+ *******************************************************************************/
+void TWI_write(uint8 a_data){
+
+	/* Pass data to be sent to TWDR register */
+	TWDR = a_data;
+
+	/*
+	 * TWINT= 1	TWI Interrupt Flag				-> Clear interrupt to start operation of TWI
+	 * TWEA= 0 	TWI Enable Acknowledge Bit		-> No ACK pulse needs to be sent
+	 * TWSTA= 0	TWI START Condition Bit			-> No start condition needed until we start connection
+	 * TWSTO= 0	TWI STOP Condition Bit			-> No stop condition needed until we terminate connection
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWINT) | (1 << TWEN);
+
+	/* Poll waiting until TWINT is set indicating a finished job */
+	while(BIT_IS_CLEAR(TWCR,TWINT));
+
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_readWithACK
+ * [Description]	: Read data from TWDR received from other device and send ACK
+ * [Args]			: N/A
+ * [Returns]		: Data received from other device in TWDR
+ *******************************************************************************/
+uint8 TWI_readWithACK(void){
+
+	/*
+	 * TWINT= 1	TWI Interrupt Flag				-> Clear interrupt to start operation of TWI
+	 * TWEA= 1 	TWI Enable Acknowledge Bit		-> Send ACK pulse after receiving data
+	 * TWSTA= 0	TWI START Condition Bit			-> No start condition needed until we start connection
+	 * TWSTO= 0	TWI STOP Condition Bit			-> No stop condition needed until we terminate connection
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWINT) | (1 << TWEA) | (1 << TWEN);
+
+	/* Poll waiting until TWINT is set indicating a finished job */
+	while(BIT_IS_CLEAR(TWCR,TWINT));
+
+	/* Return data received in TWDR */
+	return TWDR;
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_readWithNACK
+ * [Description]	: Read data from TWDR received from other device and send NACK
+ * [Args]			: N/A
+ * [Returns]		: Data received from other device in TWDR
+ *******************************************************************************/
+uint8 TWI_readWithNACK(void){
+
+	/*
+	 * TWINT= 1	TWI Interrupt Flag				-> Clear interrupt to start operation of TWI
+	 * TWEA= 0 	TWI Enable Acknowledge Bit		-> Send NACK pulse after receiving data
+	 * TWSTA= 0	TWI START Condition Bit			-> No start condition needed until we start connection
+	 * TWSTO= 0	TWI STOP Condition Bit			-> No stop condition needed until we terminate connection
+	 * TWWC: 	TWI Write Collision Flag		-> (Read Only)
+	 * TWEN= 1 	TWI Enable Bit					-> Enable TWI operation and activate TWI interface
+	 * BIT1: 	Reserved Bit					-> (Read Only)
+	 * TWIE= 0 	TWI Interrupt Enable			-> Working with polling
+	 */
+	TWCR = (1 << TWINT) | (1 << TWEN);
+
+	/* Poll waiting until TWINT is set indicating a finished job */
+	while(BIT_IS_CLEAR(TWCR,TWINT));
+
+	/* Return data received in TWDR */
+	return TWDR;
+}
+
+/*******************************************************************************
+ * [Function Name]	: TWI_getStatus
+ * [Description]	: Get current device status
+ * [Args]			: N/A
+ * [Returns]		: Current bus status
+ *******************************************************************************/
+uint8 TWI_getStatus(void){
+
+	/* Return current bus status */
+	return (TWSR & 0xF8);
+}

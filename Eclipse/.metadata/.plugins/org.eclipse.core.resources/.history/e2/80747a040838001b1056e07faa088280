@@ -1,0 +1,164 @@
+/******************************************************************************
+ *
+ * 		Module: Main MCU2 program
+ *
+ *	 File Name: MCU2.c
+ *
+ * Description: Source file for the MicroController start point
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 25, 2020
+ *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "MCU2.h"
+
+/*******************************************************************************
+ *                      Global Variables                              	   	   *
+ *******************************************************************************/
+
+uint8 g_password[PASSWORD_LENGTH];		/* Variable to hold input password */
+
+/*******************************************************************************
+ *                    	Function Prototypes 		                           *
+ *******************************************************************************/
+
+void MCU_init(void);					/* Function to initiate MCU */
+void receiveAndSavePassword(void);		/* Function to receive password and send to other MCU to save */
+uint8 receiveAndCheckPassword(void);	/* Function to receive password and check with saved password */
+void resetPasswordContainer(void);		/* Function to reset password container */
+void raiseError(void);					/* Function to Start error actions */
+void unlockSystem(void);				/* Function to unlock system */
+
+/*******************************************************************************
+ *                      Function Definitions                                   *
+ *******************************************************************************/
+
+int main(void){
+
+	uint8 setup = TRUE;				/* Variable for checking of setup state on MCU*/
+	uint8 changePass = FALSE;		/* Variable for checking of changing password state on MCU*/
+	uint8 openDoor = FALSE;			/* Variable for checking of opening door state on MCU*/
+	uint8 errorCounter = 0;			/* Variable for counting errors occurs */
+	uint8 actionSymbol;				/* Variable to hold action to be taken next */
+	MCU_init();						/* Initiate MCU */
+	while(1){
+		while(setup){									/* Enter setup state */
+			receiveAndSavePassword();					/* Receive password and send for saving */
+			if(receiveAndCheckPassword()){				/* Receive password and check validity */
+				USART_sendByte(ACTION_SUCCESS);			/* Send success symbol */
+				setup = FALSE;							/* Disable setup state */
+				break;									/* Exit setup state */
+			}
+			else{
+				USART_sendByte(ACTION_FAIL);			/* Send success symbol */
+				resetPasswordContainer();				/* Reset password array */
+			}
+		}
+
+		while(changePass || openDoor){					/* Enter change pass and open door states */
+			if(receiveAndCheckPassword()){				/* Receive password and check validity */
+				USART_sendByte(ACTION_SUCCESS); 		/* Send success symbol */
+				errorCounter = 0;						/* Reset error counter */
+				if (openDoor){							/* If active state is open door state */
+					openDoor = FALSE;					/* Disable open door state */
+					unlockSystem();						/* Unlock system */
+				}
+				else{									/* If active state is change pass state */
+					changePass = FALSE;					/* Disable change pass state */
+					setup = TRUE;						/* Disable setup state */
+				}
+				break;									/* Exit active state */
+			}
+			else{
+				errorCounter++;
+				if (errorCounter == ERROR_LIMIT){
+					errorCounter = 0;
+					changePass = FALSE;
+					USART_sendByte(ACTION_ERROR);
+					raiseError();
+					break;
+				}
+				else
+					USART_sendByte(ACTION_SUCCESS);		/**/
+			}
+		}
+
+		if(!setup){
+			actionSymbol = USART_receiveByte();
+			if ('*' == actionSymbol)
+				changePass = TRUE;
+			else if ('-' == actionSymbol)
+				openDoor = TRUE;
+		}
+	}
+}
+
+void MCU_init(void){
+
+	Usart_ConfigType usart_configuration = {BAUD_RATE_9600, EIGHT_BITS, DISABLED, ONE_BIT};
+	TIMERS_ConfigType timer_configuration = {0, 31250, CLEAR_TIMER_COMPARE_ICR1, FCPU_256, NORMAL_OPERATION, NORMAL_OPERATION};
+	cli();
+	USART_init(&usart_configuration);
+	TIMER1_init(&timer_configuration);
+	EEPROM_init();
+	EXTERNALPERIPHERALS_init();
+	sei();
+}
+
+void receiveAndSavePassword(void){
+	USART_receiveString(g_password);
+	for (int i = 0; i < PASSWORD_LENGTH-1; i++){
+		EEPROM_writeByte(PASSWORD_ADDRESS+i,  g_password[i]);
+	}
+	resetPasswordContainer();
+}
+
+uint8 receiveAndCheckPassword(void){
+	USART_receiveString(g_password);
+	uint8 byteToRead;
+	for (int i = 0; i < PASSWORD_LENGTH-1; i++){
+		if (EEPROM_readByte(PASSWORD_ADDRESS+i, &byteToRead)){
+			if(g_password[i] != byteToRead){
+				resetPasswordContainer();
+				return ERROR;
+			}
+		}
+		else{
+			resetPasswordContainer();
+			return ERROR;
+		}
+	}
+	resetPasswordContainer();
+	return SUCCESS;
+}
+
+void resetPasswordContainer(void){
+	for(int i = 0; i < PASSWORD_LENGTH-1; i++)
+		g_password[i] = '*';
+}
+
+void raiseError(void){
+	TIMER1_start();
+	EXTERNALPERIPHERALS_startAlarm();
+	while(g_timePassed <= 60);
+	EXTERNALPERIPHERALS_stopAlarm();
+	TIMER1_stop();
+}
+
+void unlockSystem(void){
+	TIMER1_start();
+	EXTERNALPERIPHERALS_openDoor();
+	while(g_timePassed <= 15);
+	EXTERNALPERIPHERALS_holdDoor();
+	while(g_timePassed <= 18);
+	EXTERNALPERIPHERALS_closeDoor();
+	while(g_timePassed <= 33);
+	EXTERNALPERIPHERALS_holdDoor();
+	TIMER1_stop();
+}

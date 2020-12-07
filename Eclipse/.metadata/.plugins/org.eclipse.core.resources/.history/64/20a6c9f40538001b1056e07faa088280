@@ -1,0 +1,39 @@
+ /******************************************************************************
+ *
+ * 		Module: Main MCU2 program
+ *
+ *	 File Name: MCU2.h
+ *
+ * Description: Header file for the MicroController start point
+ *
+ * 		Author: Mohamed Mahfouz
+ *
+ *  Created on: Nov 25, 2020
+ *
+ *******************************************************************************/
+
+#ifndef MCU2_H_
+#define MCU2_H_
+
+/*******************************************************************************
+ *							  INCLUDES	  	   		                           *
+ *******************************************************************************/
+
+#include "usart.h"
+#include "external_eeprom.h"
+#include "external_peripherals.h"
+#include "timers.h"
+
+/*******************************************************************************
+ *                      Preprocessor Macros                                    *
+ *******************************************************************************/
+
+#define PASSWORD_LENGTH 6			/* Length of password containers */
+#define PASSWORD_ADDRESS 0x00FF		/* Address to save password in memory */
+#define ERROR_LIMIT 3				/* Number of times before activating error */
+
+/* Success and Error codes */
+#define ERROR 0
+#define SUCCESS 1
+
+#endif /* MCU2_H_ */
